@@ -1,3 +1,17 @@
+:root {
+	--white: #d3d3d3;
+	--white-light: #d3d3d375;
+	--lemon: #f1e8b8;
+	--yellow: #f9e784;
+	--copper: #e58f65;
+	--indian-red: #d05353;
+	--eerie-black: #191919;
+	--eerie-black-zwei: #383838;
+	--eerie-black-transparent: #19191993;
+--indian-green: #9fe79d;
+
+}
+
 *,
 *::before,
 *::after {
@@ -12,42 +26,217 @@ body {
 	width: 100vw;
 }
 
+/* IMAGE */
+
 .image-container {
-	width: 50vw;
+	width: 45vw;
 	background-image: url(./img/1.jpg);
 	background-repeat: no-repeat;
-	background-attachment: initial;
+	/* background-attachment: initial; */
 	background-size: cover;
 	background-position: right;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	/* min-width: 300px; */
+	/* flex: 1 0 0 */
+}
+
+.logo-background {
+	margin-top: 10rem;
+	width: 100%;
+	height: 30vh;
+	background-color: var(--eerie-black-transparent);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid var(--white);
+	border-bottom: 1px solid var(--white);
 }
 
 .logo-container {
-    margin-top: 200px;
-	width: 100%;
-	height: 300px;
-	background-color: rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .logo {
-height: 50%
+	height: 20vh;
+}
+
+.logo-tagline {
+	height: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hero {
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+
+.tagline {
+	color: var(--white);
+	text-transform: capitalize;
 }
 
 .copyrights {
-	color: aliceblue;
-    margin-bottom: 10px;
+	color: var(--white);
+	margin-bottom: 1rem;
 }
 
-.form-container {
-	width: 50vw;
+a,
+a:visited,
+a:focus {
+	color: var(--white);
+}
+
+/* Second Section  */
+
+.form-grouping-container {
+	width: 55vw;
 	display: flex;
 	flex-direction: column;
+	/* justify-content: center; */
+	padding: 5rem;
+	/* padding: 30px; */
+	background-color: var(--eerie-black);
+    color: var( --white);
+}
+.form-container {
+	display: flex;
+	flex-direction: column;
+	/* padding: 20px; */
+	/* flex: 1 0 0; */
+}
+
+.text-container {
+	font-size: 1.9rem;
+	margin-bottom: 4rem;
+	/* height: 30%; */
+	/* display: flex;
+	flex-direction: column; */
+	/* justify-content: space-around; */
+}
+
+p span {
+	font-style: italic;
+}
+
+.text-container p {
+	margin-bottom: 2rem;
+	/* font-size: 20px; */
+}
+
+h2 {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2rem;
+    color: var(--white-light);
+}
+
+/* form */
+
+/* reset inputs */
+
+input,
+button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+.form-row {
+	display: flex;
+	/* justify-content: space-between; */
+	gap: 5rem;
+	margin-bottom: 1rem;
+	/* width: 100%; */
+}
+
+.form-item {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+/* custom input and label */
+
+label {
+	font-size: 0.9rem;
+	margin-bottom: 0.3rem;
+    color: var();
+}
+
+input {
+	font-size: 1rem;
+	outline: 1px solid var(--white);
+	border-radius: 0.5rem;
+	padding: 0.8rem;
+	/* outline: var(--white); */
+    color: var(--white);
+}
+
+/* input:hover,
+input:focus {
+	outline: 2px solid var(--copper);
+} */
+
+
+input:invalid {
+    outline: 2px solid var(--indian-red);
+}
+
+input:required {
+    outline: 2px solid var(--indian-red);
+}
+
+
+input:valid {
+    outline: 1px solid var(--white);
+}
+input:focus {
+    background-color: var(--eerie-black-zwei);
+    outline: 2px solid var(--white);
+}
+
+input::placeholder {
+	color: var(--white-light);
+	font-size: 1rem;
+}
+
+.error-input {
+    color: var(--indian-red);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+
+/* custom button */
+
+.form-button {
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: var(--lemon);
+    padding: 1rem 10rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--white);
+
+}
+
+button:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+    border: 2px solid var(--copper);
+}
+
+label span {
+    font-size: 0.5rem;
 }

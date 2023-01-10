@@ -9,43 +9,74 @@
 	</head>
 	<body>
 		<div class="image-container">
-			<div class="logo-container">
-				<img src="./img/logo/lensman-logotype-2_200.png" alt="logo of the lensman.pl" class="logo" />
+			<div class="logo-background">
+				<div class="logo-container">
+					<img
+						src="./img/logo/AVATAR_2.png"
+						alt="logo of the lensman.pl"
+						class="logo"
+					/>
+					<div class="logo-tagline">
+						<div class="hero">Lensman.pl</div>
+						<div class="tagline">"beauty is not worth it"</div>
+					</div>
+				</div>
 			</div>
-			<p class="copyrights">Photo by <a href="https://www.lensman.pl" target="_blank">Lensman.pl</a></p>
+			<p class="copyrights">
+				Photo by <a href="https://www.lensman.pl" target="_blank">Lensman.pl</a>
+			</p>
 		</div>
 
-		<div class="form-container">
-			<p>
-				This is not a real online service! You know you need something like this
-				in your life to help you realize your deepest dreams.
-			</p>
+		<div class="form-grouping-container">
+			<div class="text-container">
+				<p>
+					This is not a real online service! You know you need something
+					<span>like this in your life</span> to help you realize your deepest
+					dreams.
+				</p>
+				<p><span>Lorem, ipsum dolor...</span></p>
+			</div>
+			<div class="form-container">
+				<h2>Let's do this!</h2>
 
-			<p>Lorem, ipsum.</p>
+				<form action="" method="get">
+					<div class="form-row">
+						<div class="form-item">
+							<label for="first-name">First Name *</label
+							><input type="text" name="first-name" id="first-name" placeholder="John" required autofocus />
+						</div>
+						<div class="form-item">
+							<label for="last-name">Last Name *</label
+							><input type="text" name="last-name" id="last-name" placeholder="Doe" required/>
+						</div>
+					</div>
 
-			<p>Let's do this!</p>
+					<div class="form-row">
+						<div class="form-item">
+							<label for="email">Email *</label
+							><input type="email" name="email" id="email" placeholder="john.doe@gmail.com" required />
+						</div>
+						<div class="form-item">
+							<label for="phone">Phone Number <span>(min 9)</span></label
+							><input type="tel" name="phone" id="phone" placeholder="(+48) 666 666 666" minlength="9"/>
+						</div>
+					</div>
 
-			<form action="" method="get">
-				<label for="first-name">First Name</label
-				><input type="text" name="first-name" id="first-name" />
+					<div class="form-row">
+						<div class="form-item">
+							<label for="password">Password *</label
+							><input type="password" name="password" id="password" required />
+							<p id="error-msg" class="error-input" style="display:none;"></p>
+						</div>
+						<div class="form-item">
+							<label for="conf-password">Confirm Password *</label
+							><input type="password" name="conf-password" id="conf-password" required />
+						</div>
+					</div>
 
-				<label for="last-name">Last Name</label
-				><input type="text" name="last-name" id="last-name" />
-
-				<label for="email">Email</label
-				><input type="email" name="email" id="email" />
-
-				<label for="phone">Phone Number</label
-				><input type="tel" name="phone" id="phone" />
-
-				<label for="password">Password</label
-				><input type="password" name="password" id="password" />
-
-				<label for="conf-password">Confirm Password</label
-				><input type="password" name="conf-password" id="conf-password" />
-
-				<button type="submit">Create Account</button>
-			</form>
+					<div class="form-row form-button"><div class="form-tem"><button id="submit-btn" type="submit">Create Account</button></div></div>
+				</form>
+			</div>
 		</div>
 		<script src="./script.js"></script>
 	</body>

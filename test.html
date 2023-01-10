@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-column {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5em;
+}
+
+input {
+  margin-bottom: 1em;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <form class="form">
+        <div class="form-row">
+          <div class="form-column">
+            <label for="input1">Input 1</label>
+            <input id="input1" type="text">
+            <label for="input2">Input 2</label>
+            <input id="input2" type="text">
+          </div>
+          <div class="form-column">
+            <label for="input3">Input 3</label>
+            <input id="input3" type="text">
+            <label for="input4">Input 4</label>
+            <input id="input4" type="text">
+          </div>
+        </div>
+      </form>
+</body>
+</html>
